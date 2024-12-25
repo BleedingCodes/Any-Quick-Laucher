@@ -3,7 +3,7 @@ Open any application or webpage simple by adjusting the source code.
 
 OS Friendly
 
-To change Webpage destiation
+To change Webpage destination
 
     def OpenUrlX():
               #Paste Website Address in replace of "Website Address"
