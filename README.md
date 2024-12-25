@@ -12,7 +12,7 @@ If you want to use a picture as the background of the Application, remove # symb
                             image=background_image)
 
 
-
+If no picture is used the Background is White.
 
 To change Webpage destination
 
