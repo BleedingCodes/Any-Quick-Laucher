@@ -15,13 +15,15 @@ root.attributes('-alpha', 0.67)
 root.attributes('-topmost', 2)
 root.wm_geometry("700x70+900+500")
 
-background_image=tk.PhotoImage(file=r"/home/try/Pictures/bg.png")
-background_label = tk.Label(root,
-                            image=background_image)
-background_label.place(x=0,
-                       y=0,
-                       relwidth=1,
-                       relheight=1)
+#Remove Cash Symbol to use a picture
+
+#background_image=tk.PhotoImage(file=r"/home/try/Pictures/bg.png")
+#background_label = tk.Label(root,
+                            #image=background_image)
+#background_label.place(x=0,
+                       #y=0,
+                       #relwidth=1,
+                       #relheight=1)
 #######################################################################################
 #This function is used to display time on the label 
 def time():
