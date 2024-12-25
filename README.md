@@ -3,6 +3,17 @@ Open any application or webpage simple by adjusting the source code.
 
 OS Friendly
 
+If you want to use a picture as the background of the Application, remove # symbol and copy and paste path to the picture.
+
+                                        
+                                        #Paste Path to picture to use as Background of application
+    background_image=tk.PhotoImage(file=r"Path to Picture for Application Background")
+    background_label = tk.Label(root,
+                            image=background_image)
+
+
+
+
 To change Webpage destination
 
     def OpenUrlX():
