@@ -1,5 +1,6 @@
 # Any-Quick-Laucher
-Open any application or webpage simple by adjusting the source code.
+Open any application or webpage simple by a click of a button.
+Simply adjuste the source code to open you're desire Application or Web Page.
 
 OS Friendly
 
