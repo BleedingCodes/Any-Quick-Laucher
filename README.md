@@ -18,7 +18,7 @@ If no picture is used the Background is White.
 To change Webpage destination
 
     def OpenUrlX():
-   #Paste Website Address in replace of "Website Address"
+       #Paste Website Address in replace of "Website Address"
         urlX='Website Address'
         webbrowser.open_new(urlX)
 
@@ -27,7 +27,7 @@ To change Webpage destination
         Page.__init__(self, *args, **kwargs)
 
        label = tk.Label(self, 
-   #Type in Webpage Name to Display in replace of "Web Page Name"
+       #Type in Webpage Name to Display in replace of "Web Page Name"
                         text="Web Page Name")
        label.pack(side="top", 
                   fill="both", 
@@ -36,7 +36,7 @@ To change Webpage destination
         b1 = tk.Button(buttonframe,
                        bg="black",
                        fg="lightgreen",
-    #Type in Webpage Name to Display in replace of "Display Name"
+        #Type in Webpage Name to Display in replace of "Display Name"
                        text="Display Name",
                        command=OpenUrlX)
 
