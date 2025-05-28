@@ -47,77 +47,27 @@ time()
 #Functions for web domains $ Applications
 #Web tabs
 #Tkinter Tutorial
-def OpenUrl1():
-    url1='https://www.pythontutorial.net/tkinter/'
-    webbrowser.open_new(url1)
-#Python Tutorial 
-def OpenUrl2():
-    url2='https://www.pythontutorial.net/'
-    webbrowser.open_new(url2)
-#Crypto
-def OpenUrl3():
-    url3='https://coinmarketcap.com/'
-    webbrowser.open_new(url3)
-#Delta Dental 
-def OpenUrl4():
-    url4='https://auth.deltadental.com/'
-    webbrowser.open_new(url4)
-#E-Trade 
-def OpenUrl5():
-    url5='https://us.etrade.com/etx/pxy/login'
-    webbrowser.open_new(url5)
-#Code Stats
-def OpenUrl6():
-    url6='https://codestats.net/'
-    webbrowser.open_new(url6)
-####################################################################################
-#Applications
-#VS Code
-def app1():
-    subprocess.run('/usr/share/code/code --unity-launch', 
-                   shell=True)
-#ThunderBird
-def app2():
-    subprocess.run('thunderbird', 
-                   shell=True)
-#Terminal
-def app3():
-    subprocess.run('gnome-terminal', 
-                   shell=True)
-#Files
-def app4():
-    subprocess.run('nemo', 
-                   shell=True)
-#Wmware
-def app5():
-    subprocess.run('/usr/bin/vmplayer #u', 
-                   shell=True) 
-#Transmission
-def app6():
-    subprocess.run('transmission-gtk %U', 
-                   shell=True) 
-#######################################################################    
-#Frame     
 class Page(tk.Frame):
-    
     def __init__(self, *args, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
-    
     def show(self):
         self.lift()
 
-#Web
-#Tkinter Tutorial
+def OpenUrl1():
+    url1='https://www.pythontutorial.net/tkinter/'
+    webbrowser.open_new(url1)
 class Page1(Page):
-   def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-
        label = tk.Label(self, 
                         text="Tkinter Tutorial")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
-#Python Tutorial
+#Python Tutorial 
+def OpenUrl2():
+    url2='https://www.pythontutorial.net/'
+    webbrowser.open_new(url2)
 class Page2(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
@@ -126,111 +76,131 @@ class Page2(Page):
                         text="Python Tutorial")
        label.pack(side="top", 
                   fill="both", 
-                  expand=True)       
+                  expand=True)   
+
 #Crypto
+def OpenUrl3():
+    url3='https://coinmarketcap.com/'
+    webbrowser.open_new(url3)
 class Page3(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-
        label = tk.Label(self, 
                         text="Crypto")
        label.pack(side="top", 
                   fill="both", 
-                  expand=True)       
-#Delta Denta
+                  expand=True)      #Delta Dental 
+def OpenUrl4():
+    url4='https://auth.deltadental.com/'
+    webbrowser.open_new(url4)
 class Page4(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-
        label = tk.Label(self, 
                         text="Delta Dental")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
-#E-Trade
+#E-Trade 
+def OpenUrl5():
+    url5='https://us.etrade.com/etx/pxy/login'
+    webbrowser.open_new(url5)
 class Page5(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-
        label = tk.Label(self, 
                         text="E-Trade")
        label.pack(side="top", 
                   fill="both", 
-                  expand=True)
-#Code Stats
-class Page6(Page):
+                  expand=True)#Code Stats
+def OpenUrl6():
+    url6='https://codestats.net/'
+    webbrowser.open_new(url6)
+  class Page6(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="Code Stats")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
-##############################################################################
+####################################################################################
 #Applications
 #VS Code
+def app1():
+    subprocess.run('/usr/share/code/code --unity-launch', 
+                   shell=True)
 class AppPage1(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="VS Code")
        label.pack(side="top", 
                   fill="both", 
-                  expand=True)
-#ThunderBird
+                  expand=True)#ThunderBird
+def app2():
+    subprocess.run('thunderbird', 
+                   shell=True)
 class AppPage2(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="ThunderBird")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
 #Terminal
+def app3():
+    subprocess.run('gnome-terminal', 
+                   shell=True)
 class AppPage3(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="Terminal")
        label.pack(side="top",
                   fill="both", 
                   expand=True)
 #Files
+def app4():
+    subprocess.run('nemo', 
+                   shell=True)
 class AppPage4(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="Files")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
-#VMware
+#Wmware
+def app5():
+    subprocess.run('/usr/bin/vmplayer #u', 
+                   shell=True) 
 class AppPage5(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="VMware")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
 #Transmission
+def app6():
+    subprocess.run('transmission-gtk %U', 
+                   shell=True) 
 class AppPage6(Page):
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
-       
        label = tk.Label(self, 
                         text="Transmission")
        label.pack(side="top", 
                   fill="both", 
                   expand=True)
-#######################################################################################
-#Buttons Look and position
+   
+
+
+##############################################################################
 class MainView(tk.Frame):
 
     def __init__(self, *args, **kwargs):
